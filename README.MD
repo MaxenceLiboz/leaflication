@@ -1,10 +1,14 @@
 
 # Documentation of the project Leafliction
 
+## Requirement
+First you must download the database: [link to download](https://cdn.intra.42.fr/document/document/17458/leaves.zip) (require intra access)  
+Then the subject ask you to respect the flake8 norm (as we are using python), it will be downloaded in the env part.  
+Make sure you are using the extension to see the error in vscode.
+
 ## Environement
 
-First you must download the database: [link to download](https://cdn.intra.42.fr/document/document/17458/leaves.zip) (require intra access)  
-Then you need to set up a venv in python with the requirements.txt
+You need to set up a venv in python with the requirements.txt
 ```
 python3 -m venv [ENV_FOLDER_NAME]
 source [ENV_FOLDER_NAME]
