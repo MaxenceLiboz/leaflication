@@ -29,7 +29,7 @@ this will give us the distribution of the dataset.
 
 Start looking at the [Pillow library (PIL fork)](https://pillow.readthedocs.io/en/stable/reference/Image.html)  
 
-We will create a function for each augmentation we want to do. This augmentations are going to be:
+We will create a function for each augmentation we want to do. Theses augmentations are going to be:
 - Rotation (Done)
 - Blur (Done)
 - Contrast (Done)
@@ -37,4 +37,5 @@ We will create a function for each augmentation we want to do. This augmentation
 - Illumination (Done)
 - Distortion (TODO)
 
-Each image will be saved in a folder with the name like so: [ ORIGINAL_NAME_TYPE_OF_DATA_AUGMENTATION.jpg ]
+Each image will be saved in a folder with the name like so:  
+- ORIGINAL_NAME_TYPE_OF_DATA_AUGMENTATION.jpg
