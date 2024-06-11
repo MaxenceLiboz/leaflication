@@ -1,2 +1,3 @@
 images/
 .project-env
+__pycache__/

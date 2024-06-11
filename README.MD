@@ -10,8 +10,8 @@ Make sure you are using the extension to see the error in vscode.
 
 You need to set up a venv in python with the requirements.txt
 ```
-python3 -m venv [ENV_FOLDER_NAME]
-source [ENV_FOLDER_NAME]
+python3 -m venv .project-env
+source .project-env/bin/activate
 pip install -r requirements.txt
 ```
 Then you are set to start coding or reviewing the project
@@ -35,7 +35,7 @@ We will create a function for each augmentation we want to do. Theses augmentati
 - Contrast (Done)
 - Scaling (Done)
 - Illumination (Done)
-- Distortion (TODO)
+- Stretching (Done)
 
 Each image will be saved in a folder with the name like so:  
 - ORIGINAL_NAME_TYPE_OF_DATA_AUGMENTATION.jpg
