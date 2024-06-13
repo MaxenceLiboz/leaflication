@@ -6,6 +6,7 @@ import os
 
 class ImageAugmentation:
     def __init__(self):
+        self.image: Image = None
         self.augmentation_list = [
             self.rotation, self.blur, self.contrast, self.scaling, self.illumination, self.stretch
         ]
