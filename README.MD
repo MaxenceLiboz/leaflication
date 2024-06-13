@@ -14,8 +14,15 @@ python3 -m venv .project-env
 source .project-env/bin/activate
 pip install -r requirements.txt
 ```
-Then you are set to start coding or reviewing the project
+  
+If you take the dataset from the 42 intra you must do some changes in order for it to work best on our project:  
+First, add an Apple and Grape folder where you are going to put each subdirectory related to them.  
+Second, you will change all the space by "_" with this command:
+```
+for file in leaves/images/*/*/*; do mv "$file" `echo $file | tr ' ' '_'` ; done
+```
 
+Then you are set to start coding or reviewing the project
 ## Part 1
 
 
