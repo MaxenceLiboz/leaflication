@@ -14,15 +14,17 @@ python3 -m venv .project-env
 source .project-env/bin/activate
 pip install -r requirements.txt
 ```
-  
+<br>
 If you take the dataset from the 42 intra you must do some changes in order for it to work best on our project:  
+
 First, add an Apple and Grape folder where you are going to put each subdirectory related to them.  
 Second, you will change all the space by "_" with this command:
 ```
 for file in leaves/images/*/*/*; do mv "$file" `echo $file | tr ' ' '_'` ; done
 ```
-
+<br>
 Then you are set to start coding or reviewing the project
+
 ## Part 1
 
 
@@ -46,3 +48,25 @@ We will create a function for each augmentation we want to do. Theses augmentati
 
 Each image will be saved in a folder with the name like so:  
 - ORIGINAL_NAME_TYPE_OF_DATA_AUGMENTATION.jpg
+
+
+## Part 3
+
+For this part we will look at the [PlantCV](https://plantcv.readthedocs.io/en/latest/) and [OpenCV](https://docs.opencv.org/4.10.0/) libraries that will help us do the transformations
+
+We will create a function for each augmentation we want to do. Theses augmentations are going to be:
+- Gaussian Blur ??? (DONE)
+- Rgb to grey (DONE)
+- Mask (DONE)
+- Analyze object (DONE)
+- Roi objects (TODO)
+- Pseudolandmarks (TODO)
+- Color histogram (TODO)
+
+<br>
+If our program is call with the image path we only will display all the transformation and the original image in a plot.  
+<br> <br>  
+If our program is call with a directory of images, we won´t display the transformation, but we will save them like so:  
+
+- ORIGINAL_NAME_TYPE_OF_IMAGE_TRANSFORMATION.jpg
+
