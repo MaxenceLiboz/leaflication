@@ -106,10 +106,3 @@ class ImageTransformation:
 
         # Show the plot
         plt.show()
-
-
-if __name__ == "__main__":
-    imageTransformation = ImageTransformation()
-    image_list = ["image.jpg", "image_healthy.jpg", "image_rust.jpg", "image_scab.jpg"]
-
-    imageTransformation.image_directory_transformation("./leaves/images/Apple/Apple_Black_rot")
