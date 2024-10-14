@@ -1,4 +1,5 @@
 from ImageAugmentation import ImageAugmentation
+from ImageTransformation import ImageTransformation
 from os import listdir
 from os.path import isfile, join
 from matplotlib import pyplot as plt
@@ -13,6 +14,7 @@ class Dataset:
         self.training_set: dict = {}
         self.testing_set: dict = {}
         self.imageAugmentation = ImageAugmentation()
+        self.imageTransformation = ImageTransformation()
 
 
     # Need to implement the training and testing set split
