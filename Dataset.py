@@ -33,10 +33,18 @@ class Dataset:
 
             # Create a pie chart with the distribution of the dataset
             fig = plt.figure(figsize=(15, 10))
-            fig.add_subplot(1, 1, 1)
+
+            fig.add_subplot(1, 3, 1)
             plt.pie(self.leaves.values(), labels=self.leaves.keys(), autopct="%1.1f%%")
-            plt.title("Distribution of the dataset")
-            plt.legend(loc="upper right")
+            # plt.legend(loc="upper right")
+
+            fig.add_subplot(1, 2, 2)
+            # used to set colors for bar charts automatically
+            prop_iter = iter(plt.rcParams['axes.prop_cycle'])
+            for key in self.leaves.keys():
+                plt.bar(key, height=self.leaves.get(key), color=next(prop_iter)['color'])
+
+            plt.suptitle("Distribution of the dataset")
             plt.show()
 
         
